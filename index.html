@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arman | Graphic Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    }
+
+    /* Loader */
+    #loader {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #0f0c29;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    .spinner {
+      width: 60px;
+      height: 60px;
+      border: 6px solid #00f7ff;
+      border-top: 6px solid transparent;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: flex-end;
+      gap: 1.5rem;
+      padding: 1rem 3rem;
+      z-index: 999;
+      box-shadow: 0 0 10px #00f7ff;
+    }
+
+    nav a {
+      color: #00f7ff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffce00;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      z-index: 1;
+      position: relative;
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 4rem;
+      color: #00f7ff;
+      animation: glowText 2s ease-in-out infinite alternate;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin: 1rem 0;
+      color: #ffce00;
+    }
+
+    p {
+      max-width: 700px;
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    .btn {
+      margin: 1rem;
+      padding: 0.8rem 2.5rem;
+      background: linear-gradient(to right, #00f7ff, #00c3ff);
+      border: none;
+      border-radius: 50px;
+      color: #000;
+      font-weight: bold;
+      box-shadow: 0 0 20px #00f7ff;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: linear-gradient(to right, #f0f, #a100ff);
+      color: #fff;
+      box-shadow: 0 0 30px #f0f;
+    }
+
+    @keyframes glowText {
+      from { text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff; }
+      to { text-shadow: 0 0 20px #00f7ff, 0 0 40px #00f7ff; }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.5rem; }
+      nav { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader"><div class="spinner"></div></div>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="resume.html">Resume</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-in">
+    <h1>Hello, I'm Arman</h1>
+    <h2>Creative Graphic Designer</h2>
+    <p>I transform ideas into visually powerful and professionally designed content that engages, inspires, and delivers results. Let's bring your vision to life.</p>
+    <a href="resume.html" class="btn">View Resume</a>
+    <a href="about.html" class="btn">About Me</a>
+    <a href="services.html" class="btn">My Services</a>
+    <a href="portfolio.html" class="btn">My Portfolio</a>
+    <a href="testimonials.html" class="btn">Testimonials</a>
+    <a href="contact.html" class="btn">Contact Me</a>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200 });
+
+    // Loader Hide
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      loader.style.opacity = '0';
+      setTimeout(() => loader.style.display = 'none', 500);
+    });
+  </script>
+</body>
+</html>

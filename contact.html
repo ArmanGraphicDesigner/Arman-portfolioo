@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Arman</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+    }
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+    nav a {
+      color: #00f7ff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffce00;
+    }
+    .container {
+      max-width: 800px;
+      margin: 8rem auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 3rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      color: #00f7ff;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 2rem;
+    }
+    form {
+      display: grid;
+      gap: 1.5rem;
+    }
+    input, textarea {
+      padding: 1rem;
+      border: none;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      font-size: 1rem;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    button {
+      padding: 1rem;
+      background: linear-gradient(to right, #00f7ff, #00c3ff);
+      border: none;
+      border-radius: 50px;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 15px #00f7ff;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: linear-gradient(to right, #f0f, #a100ff);
+      color: #fff;
+      box-shadow: 0 0 30px #f0f;
+    }
+    .info {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 1rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="resume.html">Resume</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container" data-aos="fade-up">
+    <h1>Let's Work Together</h1>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="Subject" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="info">
+      <p>Email: armanboiarman39@gmail.com</p>
+      <p>Phone: +92 315 3224756</p>
+      <p>Location: Garden Fawara Chowk, Nishtar Road</p>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+</body>
+</html>

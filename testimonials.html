@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonials | Arman</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+    }
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+    nav a {
+      color: #00f7ff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffce00;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 8rem auto 4rem;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: #00f7ff;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 2rem;
+    }
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .testimonial {
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid #00f7ff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      transition: 0.3s ease-in-out;
+    }
+    .testimonial:hover {
+      box-shadow: 0 0 25px #00f7ff;
+      transform: translateY(-5px);
+    }
+    .testimonial p {
+      color: #ccc;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .client {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #ffce00;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="resume.html">Resume</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h1 data-aos="fade-up">Client Testimonials</h1>
+    <div class="testimonials">
+      <div class="testimonial" data-aos="fade-up">
+        <p>"Arman's work was outstanding! He delivered our entire brand kit exactly as we imagined. Highly creative and professional."</p>
+        <div class="client">– Sara Malik, Brand Strategist</div>
+      </div>
+      <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+        <p>"Very happy with the social media designs created for my clothing store. On time and always quality work."</p>
+        <div class="client">– Hassan Raza, Fashion Store Owner</div>
+      </div>
+      <div class="testimonial" data-aos="fade-up" data-aos-delay="200">
+        <p>"Amazing experience working with Arman. His UI/UX skills gave my app a whole new feel. Highly recommended!"</p>
+        <div class="client">– Adeel Khan, App Developer</div>
+      </div>
+      <div class="testimonial" data-aos="fade-up" data-aos-delay="300">
+        <p>"Clear communication, professional attitude and top-notch design work. Definitely will hire again!"</p>
+        <div class="client">– Mehwish Ali, Marketing Consultant</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+</body>
+</html>
