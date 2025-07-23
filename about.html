@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Arman</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #f0f0f0;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    nav a {
+      color: #00f7ff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: 0.4s ease;
+    }
+
+    nav a:hover {
+      color: #ffce00;
+      transform: scale(1.1);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 9rem auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 3rem 2rem;
+      border-radius: 16px;
+      border: 1px solid rgba(0, 247, 255, 0.3);
+      box-shadow: 0 0 25px rgba(0,0,0,0.4);
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container::before {
+      content: "";
+      position: absolute;
+      top: -10%;
+      left: -10%;
+      width: 120%;
+      height: 120%;
+      background: radial-gradient(circle, rgba(0, 247, 255, 0.1), transparent 70%);
+      animation: rotateGlow 8s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes rotateGlow {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: #00f7ff;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: #ddd;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 1.5rem;
+    }
+
+    strong {
+      color: #ffce00;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        margin: 7rem 1rem;
+        padding: 2rem;
+      }
+      nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="resume.html">Resume</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="200">
+    <h1 data-aos="fade-right" data-aos-delay="300">About Me</h1>
+    <p data-aos="fade-up" data-aos-delay="400">
+      Hello! I’m <strong>Arman</strong>, a passionate and detail-oriented <strong>Graphic Designer</strong> based in Pakistan. With a keen eye for aesthetics and a strong foundation in digital design, I bring ideas to life through compelling visuals. Whether it's branding, social media, or UI/UX — my mission is to create impactful experiences that resonate.
+    </p>
+    <p data-aos="fade-up" data-aos-delay="600">
+      With over <strong>1 year of experience</strong> working with diverse clients, I’ve developed a deep understanding of design principles and creative strategy. My journey is driven by curiosity, continuous learning, and a love for clean, modern design.
+    </p>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200, once: true });
+  </script>
+</body>
+</html>
